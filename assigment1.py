@@ -8,7 +8,6 @@
 # It's ok if you do not complete all the functions, and there
 # are some additional functions to try in assignment2.py.
 
-
 # A. donuts
 # Given an int count of a number of donuts, return a string
 # of the form 'Number of donuts: <count>', where <count> is the number
@@ -22,7 +21,6 @@ def donuts(count):
         return 'Number of donuts: many'
     else:
         return f'Number of donuts: {count}'
-
 
 # B. both_ends
 # Given a string s, return a string made of the first 2
