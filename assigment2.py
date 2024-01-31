@@ -8,8 +8,14 @@
 # Return the resulting string.
 def verbing(s):
   # +++your code here+++
-  return
-
+    if len(s) >=3:
+       if s[-3:] == "ing":
+         return s+"ly"
+       else:
+         return s+"ing"
+       
+    else:
+      return s
 
 # E. not_bad
 # Given a string, find the first appearance of the
@@ -33,8 +39,19 @@ def not_bad(s):
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
   # +++your code here+++
-  return
-
+  if int(len(a))%2 ==0 and  int(len(b))%2 == 0:
+    am =len(a)//2  
+    bm = len(b)//2
+    return a[0:am]+b[0:bm]+a[am:]+b[bm:]
+  elif int(len(a))%2 != 0 and  int(len(b))%2 == 0:
+    am =round(len(a)//2)  
+    bm = len(b)//2
+    return a[:am]+b[:bm]+a[am:]+b[bm:]
+  elif int(len(a))%2 == 0 and  int(len(b))%2 != 0:
+    am =len(a)//2  
+    bm = round(len(b)//2)
+    return a[:am]+b[:bm]+a[am:]+b[bm:]
+    
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
@@ -69,3 +86,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+print(7/2)
+rounded_number = round(3.5)
+
+print(rounded_number)
