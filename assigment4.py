@@ -5,6 +5,7 @@
 # all adjacent == elements have been reduced to a single element,
 # so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
 # modify the passed in list.
+# [1,7,3,9,4,2,7,1,5,2,5,8,4]
 def remove_adjacent(nums):
   # +++your code here+++
   return
@@ -16,7 +17,9 @@ def remove_adjacent(nums):
 # pass of both lists.
 def linear_merge(list1, list2):
   # +++your code here+++
-  return
+  listcombine = list1+list2
+  listcombine.sort()
+  return  listcombine
 
 # Note: the solution above is kind of cute, but unforunately list.pop(0)
 # is not constant time with the standard python list implementation, so

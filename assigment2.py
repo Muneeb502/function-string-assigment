@@ -73,11 +73,3 @@ def main():
     test(front_back('abcd', 'xy'), 'abxcdy')
     test(front_back('abcde', 'xyz'), 'abcxydez')
     test(front_back('Kitten', 'Donut'), 'KitDontenut')
-
-if __name__ == '__main__':
-    main()
-
-print(7/2)
-rounded_number = round(3.5)
-
-print(rounded_number)
